@@ -38,11 +38,12 @@ const CartPage = () => {
                     })
                 }
                 <br />
-                <p>Total: ${
+                <p>Total: ${parseFloat(
                     cartData.reduce((acc, rec) => {
                         return acc + (rec.count * rec.price)
+                        
                     }, 0)
-                }</p>
+                )}</p>
                 <br />
                 <br />
             </div>
